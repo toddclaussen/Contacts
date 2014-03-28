@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Contacts View Controller-->
@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tce-mr-DJT">
-                                <rect key="frame" x="20" y="38" width="280" height="901"/>
+                                <rect key="frame" x="20" y="40" width="280" height="901"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KW-QS-hno">
@@ -57,7 +57,7 @@
                                             <outlet property="delegate" destination="vXZ-lx-hvc" id="Ew5-IQ-Q7Q"/>
                                         </connections>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22Z-fd-uF0">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22Z-fd-uF0">
                                         <rect key="frame" x="25" y="765" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -143,20 +143,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="btnAddress" destination="pmP-SI-7hm" id="d27-cW-skP"/>
                         <outlet property="btnBack" destination="gjz-RW-xeA" id="d3J-3a-kSJ"/>
-                        <outlet property="btnCity" destination="OMu-pS-unc" id="og4-YE-u2q"/>
-                        <outlet property="btnEmail" destination="pHh-sh-oep" id="L6p-gN-jb1"/>
-                        <outlet property="btnName" destination="6Zu-T7-hAB" id="oRb-8v-gmm"/>
-                        <outlet property="btnPhone" destination="2ZS-Kf-zU5" id="ORf-f5-J6A"/>
-                        <outlet property="btnState" destination="bLx-ba-y4k" id="a8t-QL-MHN"/>
-                        <outlet property="btnZip" destination="tSn-bt-h4V" id="YAK-29-ceK"/>
                         <outlet property="scrollview" destination="tce-mr-DJT" id="M21-Ar-QH4"/>
+                        <outlet property="txtAddress" destination="pmP-SI-7hm" id="6tl-MD-pWv"/>
+                        <outlet property="txtCity" destination="OMu-pS-unc" id="Br8-nt-IwS"/>
                         <outlet property="txtData" destination="22Z-fd-uF0" id="0fq-yB-JsL"/>
+                        <outlet property="txtEmail" destination="pHh-sh-oep" id="GBJ-65-WhD"/>
+                        <outlet property="txtName" destination="6Zu-T7-hAB" id="cgQ-QR-M0z"/>
+                        <outlet property="txtPhone" destination="2ZS-Kf-zU5" id="JCA-6y-bR9"/>
+                        <outlet property="txtState" destination="bLx-ba-y4k" id="lnd-dp-XtD"/>
+                        <outlet property="txtZip" destination="tSn-bt-h4V" id="DR9-bN-Aua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-110" y="62"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
